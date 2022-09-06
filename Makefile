@@ -1,4 +1,4 @@
-CFLAGS = -g3 -O0 $(shell pkg-config --cflags starpu-1.3)
+CFLAGS = -g -ggdb -gdwarf-3 -gstrict-dwarf -O0 $(shell pkg-config --cflags starpu-1.3)
 LDFLAGS = $(shell pkg-config --libs starpu-1.3)
 CC = gcc
 
